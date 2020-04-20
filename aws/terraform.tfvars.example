@@ -1,0 +1,8 @@
+# AWS Access Key
+aws_access_key = "YOUR_ACCESS_KEY_HERE"
+
+# AWS Secret Key
+aws_secret_key = "YOUR_SECRET_KEY_HERE"
+
+# Rancher Password for admin user
+rancher_server_admin_password = "SET_YOUR_RANCHER_ADMIN_PASS_HERE"

@@ -1,0 +1,39 @@
+apiVersion: v1
+kind: Config
+clusters:
+- name: "quickstart-aws-custom"
+  cluster:
+    server: "https://ec2-18-204-56-0.compute-1.amazonaws.com/k8s/clusters/c-5prkx"
+    certificate-authority-data: "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM3akNDQ\
+      WRhZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFvTVJJd0VBWURWUVFLRXdsMGFHVXQKY\
+      21GdVkyZ3hFakFRQmdOVkJBTVRDV05oZEhSc1pTMWpZVEFlRncweU1EQTBNRFl4T0RVMk5UVmFGd\
+      zB6TURBMApNRFF4T0RVMk5UVmFNQ2d4RWpBUUJnTlZCQW9UQ1hSb1pTMXlZVzVqYURFU01CQUdBM\
+      VVFQXhNSlkyRjBkR3hsCkxXTmhNSUlCSWpBTkJna3Foa2lHOXcwQkFRRUZBQU9DQVE4QU1JSUJDZ\
+      0tDQVFFQStNM1J3SWFzdUhWSVpMUWcKOXRJTnhxU1ZybWQ1bElvbEhWMGtUWGk0cSthZUIraGJLU\
+      EE1TUtwb1ZQeHBzaUpwejNkRmJ1WjlneXFhQkZrUApXU3EyMUxMNmN0ZWkzM1pLUHhDYjRSWWNxN\
+      VMzUGVpU0ZoUWdFQUdQd3hwTGFXOUFBZTN4TWRIdXlTWjE3Z1ZYCmxtWUpwaW9sY3JSMFl2blk2a\
+      3JzMGZZU1dYQUhPRW9KWmQxRGFyYjdQblRQd3ZIb2Z1SDR4c3NMdTN2VUVVbTkKYlZoZzNCL2szZ\
+      G9PeXpvMHRLNWZxSXNROFhlOTN6ckh6VlBMRDFaSzhUbHg1ZzkyT1M4UzNYMDVxbW1peTFaSQpoY\
+      zlSWjVRWGVhQ0hiSWZ2TlByVjU5OFBLZlc1Y1lRK093N0Frbmtaa0hiV2pDdkV1Sys1d1Ria2hCN\
+      k9UVG52Ck91d2YyUUlEQVFBQm95TXdJVEFPQmdOVkhROEJBZjhFQkFNQ0FxUXdEd1lEVlIwVEFRS\
+      C9CQVV3QXdFQi96QU4KQmdrcWhraUc5dzBCQVFzRkFBT0NBUUVBYkhQRU1kUVVTS2t6TkFjMGJXM\
+      1VuM3ZrNnFuWDdQbUJSVjVRNzZRcAp5dXFUaGl1K05XVEE5Zm1iYUk0N2VrcWMxaHV6QjREMjRlc\
+      lFwbUZLM2hJMjZMTXlQQlVDa09UL29iK3duczdOCnZrV2FGeW5vMU85ckN1Z2xraUk0ZlVETVpVU\
+      W5wY0FOODRzQnBhQlhNVmp4UzBuUGxYZ21TQTU5RkpuVUJicXQKNjY1QjRHY3hxQ2J1Qk0yYnh3e\
+      GZVL3p6RWYrU1k5TnJ2SFdWOTZrc2wvL3JFVnV2SitJS0pSMFVWR3lxcHlUVApFcXBkYUFBdU5Va\
+      DZSbVMxM2hValAzaEtKZVZxano3L0F2bVJWYW5mNVdaMzhHOFNJM3hVVmpmeks3d2NNYXg4ClUwL\
+      1ZPSjhScngrdjdaNFRoNFlpYk9WMS9qWTlxdkFPb1lBU1d5WEJOTWJqWlE9PQotLS0tLUVORCBDR\
+      VJUSUZJQ0FURS0tLS0t"
+
+users:
+- name: "quickstart-aws-custom"
+  user:
+    token: "kubeconfig-user-fhlzq:9wsllbn8dbt5cvwnldzpjck89ldhllcgrh9m7k8kgnd6d46gq869t6"
+
+contexts:
+- name: "quickstart-aws-custom"
+  context:
+    user: "quickstart-aws-custom"
+    cluster: "quickstart-aws-custom"
+
+current-context: "quickstart-aws-custom"
